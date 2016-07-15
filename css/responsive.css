@@ -1,0 +1,6 @@
+@media (min-width:1023px) {
+	.form-container-sm{
+		width: 60%;
+		margin:0 auto;
+	}
+}

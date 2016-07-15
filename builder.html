@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Resume Builder</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/steps.css" type="text/css" rel="stylesheet" />
+  <link href="css/responsive.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="user_menu">Steve<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+          <ul id="user_menu" class="dropdown-content">
+            <li><a href="#!">Profile</a></li>
+            <li><a href="#!">Messages</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Sign out</a></li>
+          </ul>
+          <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+        </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="section">
+  
+      <div class="mdl-card mdl-shadow--2dp">
+
+        <div class="mdl-card__supporting-text" id="stepper">
+
+          <div class="mdl-stepper-horizontal-alternative">
+            <div class="mdl-stepper-step active-step step-1" >
+              <div class="mdl-stepper-circle"><span>1</span></div>
+              <div class="mdl-stepper-title">Select Template</div>
+              <!-- <div class="mdl-stepper-optional">Optional</div> -->
+              <div class="mdl-stepper-bar-left"></div>
+              <div class="mdl-stepper-bar-right"></div>
+            </div>
+            <div class="mdl-stepper-step  step-2">
+              <div class="mdl-stepper-circle"><span>2</span></div>
+              <div class="mdl-stepper-title">Enter Name</div>
+              <div class="mdl-stepper-bar-left"></div>
+              <div class="mdl-stepper-bar-right"></div>
+            </div>
+            <div class="mdl-stepper-step  step-3">
+              <div class="mdl-stepper-circle"><span>3</span></div>
+              <div class="mdl-stepper-title">Enter Email</div>
+              <div class="mdl-stepper-bar-left"></div>
+              <div class="mdl-stepper-bar-right"></div>
+            </div>
+            <div class="mdl-stepper-step step-4">
+              <div class="mdl-stepper-circle"><span>4</span></div>
+              <div class="mdl-stepper-title">Select Catergory</div>
+              <div class="mdl-stepper-bar-left"></div>
+              <div class="mdl-stepper-bar-right"></div>
+            </div>
+            <div class="mdl-stepper-step step-5">
+              <div class="mdl-stepper-circle"><span>5</span></div>
+              <div class="mdl-stepper-title">Build Resume</div>
+              <div class="mdl-stepper-bar-left"></div>
+              <div class="mdl-stepper-bar-right"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="steps-container">
+
+      <!-- Resume templates -->
+      <div class="row template-cards step-content active">
+        <div>
+          <h5 class="center-align">Step 1: Select Template</h5>
+        </div>
+        <div class="spacing"></div>
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Traditional</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/1.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">All Points</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/19.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">True Red</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/11.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Three Blocks</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/13.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Light Blue</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/15.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Doppio</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/22.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">New Grid</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/25.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">All Points</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/19.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">True Red</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/11.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Three Blocks</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/13.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Light Blue</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/15.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">Doppio</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/22.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col m4 s12 l3">
+          <div class="mc-card">
+            <h2 class="card-content">
+              <a href="#"><span class="card-title activator text-darken-4">New Grid</span></a>
+            </h2>
+            <div class="mc-content">
+                <div class="img-container">
+                  <a href="#"><img src="templates/25.png" class="responsive-img"> </a>
+                </div>
+                <div class="select-overlay">
+                  <i class="tiny material-icons">done</i> Select
+                </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      <!-- Resume templates ends-->
+
+
+      <!-- Step 2 -->
+      <div class="step-content enter-name">
+        <div>
+          <h5 class="center-align">Step 2: Enter Your Name</h5>
+        </div>
+
+        <div class="form-container-sm">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row form-buttons">
+            <a class="btn-flat " href="#">Back</a>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(3)">Next
+              <i class="material-icons right">send</i>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <!-- Step 2 ends-->
+
+      <!-- Step  step 3 -->
+      <div class="step-content enter-email">
+        <div>
+          <h5 class="center-align">Step 3: Enter Your Email</h5>
+        </div>
+
+        <div class="form-container-sm">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email" data-error="wrong" data-success="right">Email</label>
+            </div>
+          </div>
+          <div class="row form-buttons">
+            <a class="btn-flat " href="#">Back</a>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(4)">Next
+              <i class="material-icons right">send</i>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Step  step 3 ends-->
+
+      <!-- Step 4 -->
+      <div class="step-content select-category">
+        <div>
+          <h5 class="center-align">Step 4: Select Category</h5>
+        </div>
+
+        <div class="form-container-sm">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="category" type="text" class="validate">
+              <label for="category" >Select Category</label>
+            </div>
+          </div>
+          <div class="row form-buttons">
+            <a class="btn-flat " href="#">Back</a>
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="gotoStep(5)">Build Your Resume
+              <i class="material-icons right">send</i>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Step 4 ends-->
+
+      <!-- Step 5 -->
+      <div class="step-content">
+        <div>
+          <h5 class="center-align">Step 5: Build Resume</h5>
+        </div>
+      </div>
+      <!-- Step 5 ends-->
+      
+      <div class="clearfix"></div>
+      </div> <!-- ./ .steps-container -->
+
+    </div>
+
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iure porro ipsa quos cum aliquam adipisci, excepturi sed obcaecati reprehenderit quam labore architecto.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 Comp Name, All rights reserved
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(".template-cards .mc-card").click(function(event) {
+
+        $(".template-cards").animate({"left":"-100%"}, function(){
+          $(this).slideUp('slow', function(){
+            $(".enter-name").slideDown('fast');
+          });
+        });
+
+       gotoStep(2);
+      });
+    });
+  </script>
+
+  </body>
+</html>
