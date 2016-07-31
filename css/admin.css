@@ -10,7 +10,7 @@ body{
     background: #ffffff;
     max-width: 320px;
     width: 100%;
-    border-top: 4px solid #e18d33;
+    border-top: 4px solid #F4A261;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.25);
@@ -21,7 +21,7 @@ body{
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #e18d33;
+	background: #F4A261;
 	margin: -4px 0 0;
 	color: #ffffff;
 	font-size: 13px;
@@ -50,4 +50,94 @@ body{
 .login-text{
 	font-size: 13px;
 	color: #00c853;
+}
+.forgot-mail-header {
+	font-size: 200;
+	color: #2A9D8F;	
+}
+
+.forgot-mail-header-message {
+
+	color: #2A9D8F;	
+}
+
+.mail-form{
+	position: relative;
+    background: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    border-top: 4px solid #F4A261;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 12em auto;
+    box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.25);
+    padding:10px 0px 0px 0px;
+}
+
+.mail-form h3{
+	font-size: 18px;
+	font-weight: 500;
+	color: #666;
+	margin:30px 0 0 0;
+}
+
+.mail-form h6{
+	font-size: 16px;
+	font-weight: 500;
+	color: #666;
+	margin:30px 0 0 0;
+}
+
+.mail-form .small-text{
+	font-size: 12px;
+	color: #fff;
+	margin:30px 0 0 0;
+}
+
+
+.mail-form-footer{
+	position: relative;
+    background-color: #2A9D8F;
+    max-width: 700px;
+    width: 100%;
+    margin: 12em auto;
+    padding:20px 20px;
+}
+
+.mail-form-footer a{
+	text-decoration: none;
+	color: lightskyblue;
+	font-weight: bold;
+}
+
+
+.mail-form-footer p {
+	font-size: 12px;
+	background-color: #2A9D8F;
+	margin:30px 0 0 0;
+}
+
+.socialMedia {
+	float:right;
+	margin-top: -5px;
+}
+
+.displayLogo {
+	text-align: center;
+	float: right;
+}
+
+.displayLogo img{
+	opacity: 0.6;
+	height: 18%;
+	width: 18%;
+}
+
+.socialMediaResetPassword {
+	float:right;
+	margin-top: -20px;	
+}
+
+.socialMediaConfirmEmail {
+	float:right;
+	margin-top: -60px;	
 }
