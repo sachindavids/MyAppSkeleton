@@ -342,7 +342,7 @@
       <!-- Step  step 3 -->
       <div class="step-content enter-email">
         <div>
-          <h5 class="center-align">Step 3: Enter Your Email</h5>
+          <h5 class="center-align">Step 3: What is your email address?</h5>
         </div>
 
         <div class="form-container-sm">
@@ -390,9 +390,367 @@
       <!-- Step 4 ends-->
 
       <!-- Step 5 -->
-      <div class="step-content">
+      <div class="step-content bulid-resume">
         <div>
           <h5 class="center-align">Step 5: Build Resume</h5>
+          <div class="spacing"></div>
+          <div class="row">
+            <div class="col s12 m9">
+              <div class="card build-section scrollspy" id="contact_details">
+                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                <div class="card-content">
+                  <span class="card-title">Contact Details</span> 
+                  <div class="contact-details viewable">
+                    <h5>Jane Smith</h5>
+                    <i>Your Address</i> <br>
+                    Chennai, Tamilnadu - 600047 <br>
+                    (555)-555-0000 <br>
+                    jane.smith@gmail.com                    
+                  </div>
+                  <div class="contact-details editable hide">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="Jane" id="first_name" type="text">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="Smith" id="last_name" type="text">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input value="" id="street_address" type="text">
+                        <label for="street_address">Street Address</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="Chennai, Tamil Nadu, India" id="location" type="text">
+                        <label for="location">Cith, State, Country</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="zipcode" type="text">
+                        <label for="zipcode">Zip Code</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="phone" type="text">
+                        <label for="phone">Phone</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="email" type="email">
+                        <label for="email">Email Addres</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide">
+                  <button class="cancel-btn btn-flat">Cancel</button>
+                  <button class="btn waves-effect waves-light">Update</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="summary">
+                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                <div class="card-content">
+                  <span class="card-title">Summary</span> 
+                  <div class="viewable">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatum labore maiores debitis laboriosam voluptatem, alias, id dignissimos eligendi saepe voluptas aliquam, reprehenderit inventore. Molestiae expedita sunt voluptas harum, odit cum nisi nam voluptatem consectetur, ipsam laudantium iusto. Sunt eligendi quibusdam iusto perspiciatis explicabo ex fuga sapiente, soluta facilis amet.                 
+                  </div>
+                  <div class="editable hide">
+                    <textarea id="editor_summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex cupiditate reprehenderit neque laudantium sint animi dolores omnis sunt nihil magnam voluptatem obcaecati, illum eum ab fugit labore doloremque vel aperiam fugiat nobis, officiis et libero voluptate. Maiores autem, voluptatem, repudiandae, iure earum vero sunt quisquam harum ratione veritatis voluptates rerum.</textarea>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide">
+                  <button class="cancel-btn btn-flat">Cancel</button>
+                  <button class="btn waves-effect waves-light">Update</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="education">
+                <div class="card-content">
+                  <span class="card-title">Education</span> 
+                  <div class="viewable">
+                    <div class="content-listing hide" id="education_listing">
+                      <div class="s-item">
+                        <div class="s-actions">
+                          <button class="btn btn-small">Edit</button> 
+                          <button class="btn btn-small red darken-3">Delete</button> 
+                        </div>
+                        <div class="s-title"><i class="material-icons">reorder</i> MBA</div>
+                        <div class="s-others">
+                          ABC College <br>
+                          Graduated: August 2006
+                        </div>
+                        <div class="s-desc">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum, velit, nemo excepturi blanditiis tenetur aliquid nobis sunt facilis.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="spacing"></div>
+                    <div class="center-align">
+                      <button class="btn btn-small blue darken-4" id="btn_add_education" onclick="$('#add_education, #education_actions').removeClass('hide'); $(this).addClass('hide')"><i class="material-icons">add</i> Add Education</button>
+                    </div>
+                    
+                  </div>
+                  <div class="editable hide" id="add_education">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="degree" type="text">
+                        <label for="degree">High School, Degree or Major</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="school" type="text">
+                        <label for="school">School</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <select>
+                          <option value="1" selected>Graduated</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="school_location" type="text">
+                        <label for="school_location">Location</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="compl_date" type="date" class="datepicker">
+                        <label for="compl_date">Completion Date</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <label for="editor_school_1">Description</label>
+                        <textarea id="editor_school_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum, velit, nemo excepturi blanditiis tenetur aliquid nobis sunt facilis.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide" id="education_actions">
+                  <button class="cancel-btn btn-flat" onclick="$('#add_education, #education_actions').addClass('hide');$('#btn_add_education').removeClass('hide');return false;">Cancel</button>
+                  <button class="btn waves-effect waves-light" onclick="$('#education_listing').removeClass('hide')">ADD</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="employment">
+
+                <div class="card-content">
+                  <span class="card-title">Employment History</span> 
+                  <div class="viewable">
+                    <div class="content-listing hide" id="employment_listing">
+                      <div class="s-item">
+                        <div class="s-actions">
+                          <button class="btn btn-small">Edit</button> 
+                          <button class="btn btn-small red darken-3">Delete</button> 
+                        </div>
+                        <div class="s-title"><i class="material-icons">reorder</i> Front end developer</div>
+                        <div class="s-others">
+                          ABC Technologies, Washington DC, USA <br>
+                          August 2015 - August 2016
+                        </div>
+                        <div class="s-desc">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum.
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="spacing"></div>
+                    <div class="center-align">
+                      <button class="btn btn-small blue darken-4" id="btn_add_employment" onclick="$('#add_employment, #employment_actions').removeClass('hide'); $(this).addClass('hide')"><i class="material-icons">add</i> Add Employment</button>
+                    </div>
+                    
+                  </div>
+                  <div class="editable hide" id="add_employment">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="job_title" type="text">
+                        <label for="job_title">Job Title</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="company" type="text">
+                        <label for="company">Company</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="job_location" type="text">
+                        <label for="job_location">Location</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input type="checkbox" id="presently_employed" />
+                        <label for="presently_employed">Presently Employed</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input class="datepicker" id="start_date" type="date">
+                        <label for="start_date">Start Date</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input type="date" id="end_date" class="datepicker">
+                        <label for="end_date">End Date</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="compensation" type="text">
+                        <label for="compensation">Compensation</label>
+                      </div>
+                      <div class="input-field col s3">
+                        <select id="currency">
+                          <option value="1" selected>USD</option>
+                          <option value="2">EUR</option>
+                          <option value="3">GBP</option>
+                          <option value="4">CAD</option>
+                          <option value="5">AUD</option>
+                          <option value="6">CNY</option>
+                          <option value="7">UAH</option>
+                        </select>
+                        <label for="currency">Currency</label>
+                      </div>
+                      <div class="input-field col s3">
+                        <select id="interval">
+                          <option value="1" selected>Annually</option>
+                          <option value="2">Monthly</option>
+                          <option value="3">Daily</option>
+                          <option value="3">Hourly</option>
+                        </select>
+                        <label for="interval">Interval</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="editor_job_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum, velit, nemo excepturi blanditiis tenetur aliquid nobis sunt facilis.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide" id="employment_actions">
+                  <button class="cancel-btn btn-flat" onclick="$('#add_employment, #employment_actions').addClass('hide');$('#btn_add_employment').removeClass('hide');return false;">Cancel</button>
+                  <button class="btn waves-effect waves-light" onclick="$('#employment_listing').removeClass('hide')">ADD</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="hobbies">
+                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                <div class="card-content">
+                  <span class="card-title">Hobbies & Interests</span> 
+                  <div class="viewable">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatum labore maiores debitis laboriosam voluptatem, alias, id dignissimos eligendi saepe voluptas aliquam, reprehenderit inventore. Molestiae expedita sunt voluptas harum, odit cum nisi nam voluptatem consectetur, ipsam laudantium iusto. Sunt eligendi quibusdam iusto perspiciatis explicabo ex fuga sapiente, soluta facilis amet.                 
+                  </div>
+                  <div class="editable hide">
+                    <textarea id="editor_hobbies">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex cupiditate reprehenderit neque laudantium sint animi dolores omnis sunt nihil magnam voluptatem obcaecati, illum eum ab fugit labore doloremque vel aperiam fugiat nobis, officiis et libero voluptate. Maiores autem, voluptatem, repudiandae, iure earum vero sunt quisquam harum ratione veritatis voluptates rerum.</textarea>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide">
+                  <button class="cancel-btn btn-flat">Cancel</button>
+                  <button class="btn waves-effect waves-light">Update</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="skills">
+                <div class="card-content">
+                  <span class="card-title">Professional Skills</span> 
+                  <div class="viewable">
+                    <div class="content-listing hide" id="skills_listing">
+                      <div class="s-item">
+                        <div class="s-actions">
+                          <button class="btn btn-small">Edit</button> 
+                          <button class="btn btn-small red darken-3">Delete</button> 
+                        </div>
+                        <div class="s-title"><i class="material-icons">reorder</i> HTML5</div>
+                        <div class="s-others">
+                          Advanced
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="spacing"></div>
+                    <div class="center-align">
+                      <button class="btn btn-small blue darken-4" id="btn_add_skills" onclick="$('#add_skills, #skills_actions').removeClass('hide'); $(this).addClass('hide')"><i class="material-icons">add</i> Add Skills</button>
+                    </div>
+                    
+                  </div>
+                  <div class="editable hide" id="add_skills">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="skill_txt" type="text">
+                        <label for="skill_txt">Skill</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <select id="skill_lvl">
+                          <option value="1" selected>Beginner</option>
+                          <option value="2">Intermediate</option>
+                          <option value="3">Advanced</option>
+                          <option value="4">Expert</option>
+                        </select>
+                        <label for="skill_lvl">Level</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide" id="skills_actions">
+                  <button class="cancel-btn btn-flat" onclick="$('#add_skills, #skills_actions').addClass('hide');$('#btn_add_skills').removeClass('hide');return false;">Cancel</button>
+                  <button class="btn waves-effect waves-light" onclick="$('#skills_listing').removeClass('hide')">ADD</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="languages">
+                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                <div class="card-content">
+                  <span class="card-title">Languages</span> 
+                  <div class="viewable">
+                                     
+                  </div>
+                  <div class="editable">
+                    
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide">
+                  <button class="cancel-btn btn-flat">Cancel</button>
+                  <button class="btn waves-effect waves-light">Update</button>
+                </div>
+              </div>
+
+              <div class="card build-section scrollspy" id="references">
+                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
+                <div class="card-content">
+                  <span class="card-title">References</span> 
+                  <div class="viewable">
+                                     
+                  </div>
+                  <div class="editable">
+                    
+                  </div>
+                </div>
+                <div class="card-action actions right-align hide">
+                  <button class="cancel-btn btn-flat">Cancel</button>
+                  <button class="btn waves-effect waves-light">Update</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col hide-on-small-only m3">
+              <ul class="section table-of-contents">
+                <li><a href="#contact_details">Contact Details</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#employment">Employment History</a></li>
+                <li><a href="#hobbies">Hobbies & Interests</a></li>
+                <li><a href="#skills">Professional Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#references">References</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Step 5 ends-->
