@@ -35,6 +35,17 @@ function gotoStep(num){
 
       	$(".step-3").addClass('step-done');
         $(".step-4").addClass('active-step');
+        break;
+
+      case 5:
+        $(".select-category").animate({"left":"-100%"}, function(){
+          $(this).slideUp('slow', function(){
+            $(".bulid-resume").slideDown('fast');
+          });
+        });
+
+        $(".step-4").addClass('step-done');
+        $(".step-5").addClass('active-step');
       	break;
       default: return
     }
