@@ -6,8 +6,10 @@
   <title>Resume Builder</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link href="css/m-icon.css" type="text/css" rel="stylesheet" />
   <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="editor/trumbowyg.css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="css/steps.css" type="text/css" rel="stylesheet" />
   <link href="css/responsive.css" type="text/css" rel="stylesheet" />
@@ -16,7 +18,7 @@
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+          <a id="logo-container" href="index.html" class="brand-logo"><img src="images/new_logo.png"></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Jobs</a></li>
@@ -320,11 +322,11 @@
         <div class="form-container-sm">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
+              <input id="first_name" type="text">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
+              <input id="last_name" type="text">
               <label for="last_name">Last Name</label>
             </div>
           </div>
@@ -342,13 +344,13 @@
       <!-- Step  step 3 -->
       <div class="step-content enter-email">
         <div>
-          <h5 class="center-align">Step 3: What is your email address?</h5>
+          <h5 class="center-align">Step 3: Enter Your Email</h5>
         </div>
 
         <div class="form-container-sm">
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email">
               <label for="email" data-error="wrong" data-success="right">Email</label>
             </div>
           </div>
@@ -373,7 +375,7 @@
         <div class="form-container-sm">
           <div class="row">
             <div class="input-field col s12">
-              <input id="category" type="text" class="validate">
+              <input id="category" type="text">
               <label for="category" >Select Category</label>
             </div>
           </div>
@@ -704,19 +706,50 @@
               </div>
 
               <div class="card build-section scrollspy" id="languages">
-                <a class="btn-flat edit-btn waves-effect waves-teal"><i class="material-icons left">mode_edit</i>Edit</a>
                 <div class="card-content">
                   <span class="card-title">Languages</span> 
                   <div class="viewable">
-                                     
-                  </div>
-                  <div class="editable">
+                      <div class="content-listing hide" id="languages_listing">
+                      <div class="s-item">
+                        <div class="s-actions">
+                          <button class="btn btn-small">Edit</button> 
+                          <button class="btn btn-small red darken-3">Delete</button> 
+                        </div>
+                        <div class="s-title"><i class="material-icons">reorder</i> English</div>
+                        <div class="s-others">
+                          Advanced
+                        </div>
+                      </div>
+                    </div>
                     
+                    <div class="spacing"></div>
+                    <div class="center-align">
+                      <button class="btn btn-small blue darken-4" id="btn_add_languages" onclick="$('#add_languages, #languages_actions').removeClass('hide'); $(this).addClass('hide')"><i class="material-icons">add</i> Add Languages</button>
+                    </div>          
                   </div>
+
+                  <div class="editable hide" id="add_languages">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="lang_txt" type="text">
+                        <label for="lang_txt">Language</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <select id="lang_lvl">
+                          <option value="1" selected>Beginner</option>
+                          <option value="2">Intermediate</option>
+                          <option value="3">Advanced</option>
+                          <option value="4">Expert</option>
+                        </select>
+                        <label for="lang_lvl">Level</label>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <div class="card-action actions right-align hide">
-                  <button class="cancel-btn btn-flat">Cancel</button>
-                  <button class="btn waves-effect waves-light">Update</button>
+                <div class="card-action actions right-align hide" id="languages_actions">
+                  <button class="cancel-btn btn-flat" onclick="$('#add_languages, #languages_actions').addClass('hide');$('#btn_add_languages').removeClass('hide');return false;">Cancel</button>
+                  <button class="btn waves-effect waves-light" onclick="$('#languages_listing').removeClass('hide')">ADD</button>
                 </div>
               </div>
 
@@ -725,16 +758,90 @@
                 <div class="card-content">
                   <span class="card-title">References</span> 
                   <div class="viewable">
-                                     
-                  </div>
-                  <div class="editable">
+                    <div class="content-listing hide" id="reference_listing">
+                      <div class="s-item">
+                        <div class="s-actions">
+                          <button class="btn btn-small">Edit</button> 
+                          <button class="btn btn-small red darken-3">Delete</button> 
+                        </div>
+                        <div class="s-title"><i class="material-icons">reorder</i> Steve Smith, <small>Brother</small></div>
+                        <div class="s-others">
+                          ABC Private Ltd.,<br>
+                          steeve@gmail.com <br>
+                          95489549959 <br>
+                          10, test address <br>
+                          <div class="s-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     
+                    <div class="spacing"></div>
+                    <div class="center-align">
+                      <button class="btn btn-small blue darken-4" id="btn_add_reference" onclick="$('#add_reference, #reference_actions').removeClass('hide'); $(this).addClass('hide')"><i class="material-icons">add</i> Add Reference</button>
+                    </div> 
+                  </div>
+                  <div class="editable hide" id="add_reference">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="ref_name" type="text">
+                        <label for="ref_name">Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="ref_relationship" type="text">
+                        <label for="ref_relationship">Relationship</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="ref_company" type="text">
+                        <label for="ref_company">Company</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="ref_email" type="email">
+                        <label for="ref_email">Email Address</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="ref_phone" type="text">
+                        <label for="ref_phone">Phone</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="" id="ref_address" type="email">
+                        <label for="ref_address">Address</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="" id="ref_address2" type="email">
+                        <label for="ref_address2">Address2</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input type="checkbox" id="ref_contact_info" />
+                        <label for="ref_contact_info">Contact info available on request</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="editor_ref_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ad laborum, velit, nemo excepturi blanditiis tenetur aliquid nobis sunt facilis.</textarea>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-                <div class="card-action actions right-align hide">
-                  <button class="cancel-btn btn-flat">Cancel</button>
-                  <button class="btn waves-effect waves-light">Update</button>
+                <div class="card-action actions right-align hide" id="reference_actions">
+                  <button class="cancel-btn btn-flat" onclick="$('#add_reference, #reference_actions').addClass('hide');$('#btn_add_reference').removeClass('hide');return false;">Cancel</button>
+                  <button class="btn waves-effect waves-light" onclick="$('#reference_listing').removeClass('hide')">ADD</button>
                 </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="row form-buttons">
+                <a class="btn-flat " href="#" onclick="gotoStep(4)">Back</a>
+                <button class="btn waves-effect waves-light" type="submit" name="action"  onclick="location.href='preview-resume.html'"><i class="material-icons left">visibility</i> Preview Resume
+                </button>
               </div>
 
             </div>
@@ -803,20 +910,33 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="editor/trumbowyg.min.js"></script>
 
   <script>
     $(document).ready(function() {
+      $('.scrollspy').scrollSpy();
       $(".template-cards .mc-card").click(function(event) {
 
-        $(".template-cards").animate({"left":"-100%"}, function(){
-          $(this).slideUp('slow', function(){
-            $(".enter-name").slideDown('fast');
-          });
-        });
+        gotoStep(2);
 
-       gotoStep(2);
       });
-    });
+
+
+      
+
+      $('select').material_select();
+       $('.datepicker').pickadate({
+        selectMonths: true, 
+        selectYears: 25,
+        max:true
+      });
+       $('.tooltipped').tooltip({delay: 50});
+
+      
+
+
+
+    }); //document.ready ends
   </script>
 
   </body>
