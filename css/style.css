@@ -12,6 +12,12 @@ body{
 	clear: both;
 	height: 10px;
 }
+.spacingx2{
+  height:20px;
+}
+.spacingx3{
+  height:30px;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -148,4 +154,125 @@ nav ul a, nav .brand-logo {
 }
 .form-buttons{
 	text-align: right;
+}
+.build-section.card .card-content .card-title{
+  line-height: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #00897b;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.build-section .card-content{
+  min-height: 150px;
+}
+.build-section h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+.build-section{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.table-of-contents.fixed{
+  position: fixed;
+  top: 50px;
+}
+.build-section .edit-btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+  display: none;
+  color: #666;
+}
+.build-section:hover .edit-btn{
+  display: block;
+}
+.build-section .edit-btn .material-icons{
+  font-size: 14px;
+  margin-right: 5px;
+}
+.cancel-btn{
+  color: #00897b;
+}
+.s-title{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.s-title .material-icons{
+  color: #666;
+}
+.s-title .material-icons, .btn-small i{
+  vertical-align: bottom;
+}
+.s-item{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.s-actions{
+  position: absolute;
+  right: 20px;
+}
+.s-actions .material-icons{
+  font-size: 14px;
+}
+.btn-small{
+  font-size: 13px;
+  padding:5px 8px;
+  line-height: normal;
+  height: initial;
+  font-weight: 300;
+}
+.btn-small i{
+  font-size: 15px;
+}
+.delete-btn{
+  background-color: 
+}
+
+.preview-section{
+  background-color: #fff;
+  padding:0 30px 30px;
+  min-height: 600px;
+}
+
+.preview-section .np{
+
+}
+.theme1 .np{
+  background-color: #f44336;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 20px;
+  color: #fff;
+}
+.theme1 .np h3{
+  margin: 0;
+  line-height: normal;
+  font-size: 24px;
+  text-transform: lowercase;
+}
+.theme1 .np .row{
+  margin-bottom: 0
+}
+.theme1 .section-title{
+  color: #f44336;
+  font-weight: bold;
+  font-size: 18px;
+}
+.theme1 .section-separator{
+  border-top:1px dashed #ddd;
+  margin: 15px -30px 15px -30px;
+
+}
+.theme1 .skills-data i{
+  vertical-align: middle;
+  color: #f44336;
+}
+.theme1 .skills-data i.gray{
+  color: #ddd;
 }
