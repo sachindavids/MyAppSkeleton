@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Resume Builder - Admin</title>
+
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="../css/materialize.css" type="text/css" rel="stylesheet" />
+		<link href="../css/admin.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="logo-head">
+			<img src="images/new_logo.png" width= "18%" height="18%" alt="">
+		</div>
+		<div class="login-form">
+			
+		    <form id="login_form">
+		    	<div class="toggle-form togg_register">
+						<i class="tiny material-icons">create</i> Register
+					</div>
+		    	<h3>Login to your account</h3>
+		    	<div class="row">
+		        <div class="input-field col s12">
+		          <input id="email" type="email" class="validate">
+		          <label for="email">Email</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <input id="password" type="password" class="validate">
+		          <label for="password">Password</label>
+		        </div>
+		        <a href="#" class="forgot-pass">Forgot Password?</a>
+		        <div class="input-field col s12">
+	            <a href="home.html" class="btn waves-effect waves-light col s12">Login</a>
+	          </div>
+		      </div>
+
+		    </form>
+
+		    <form id="forgot_form" style="display:none">
+		    	<div class="toggle-form back_to_login">
+						<i class="tiny material-icons">arrow_back</i> Login
+					</div>
+		    	<h3>Reset your password</h3>
+		    	<div class="row">
+		        <div class="input-field col s12">
+		          <input id="email2" type="email" class="validate">
+		          <label for="email2">Email</label>
+		        </div>
+		        <div class="col s12">
+							<p class="login-text hide">Password has been sent to your email address. <a href="#" class="back_to_login" >Login</a></p>
+		        </div>
+		        <div class="input-field col s12">
+	            <a href="#!" class="btn waves-effect waves-light col s12" onclick="$('#modal_pass').openModal(); $('p.login-text').removeClass('hide')">Send Password</a>
+	          </div>
+		      </div>
+		      <div id="modal_pass" class="modal" style="width:400px">
+			    <div class="modal-content">
+			      <h5>Password Sent!</h5>
+			      <p>Password has been sent to your email address. Please check your inbox.</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+			    </div>
+			  </div>
+
+		    </form>
+
+		    <form id="register_form" style="display:none">
+		    	<div class="toggle-form acc_to_login">
+						<i class="tiny material-icons">arrow_back</i> Login
+					</div>
+		    	<h3>Create account</h3>
+		    	<div class="row">
+		    		<div class="input-field col s12">
+		          <input id="name" type="text" class="validate">
+		          <label for="name">Name</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <input id="email3" type="email" class="validate">
+		          <label for="email3">Email</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <input id="password3" type="password" class="validate">
+		          <label for="password3">Password</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <input id="password4" type="password" class="validate">
+		          <label for="password4">Confirm Password</label>
+		        </div>
+		        
+		        <div class="input-field col s12">
+	            <a href="#!" class="btn waves-effect waves-light col s12">Create Account</a>
+	          </div>
+		      </div>
+
+		    </form>
+		  
+		</div>
+		<script src="../js/jquery.min.js"></script>
+ 		<script src="../js/materialize.js"></script>
+
+ 		<script>
+ 			$(document).ready(function() {
+ 				$(".forgot-pass").click(function(event) {	fnToggle('#login_form', '#forgot_form'); });
+ 				$(".back_to_login").click(function(event) {	fnToggle('#forgot_form', '#login_form');	});
+ 				$(".acc_to_login").click(function(event) {	fnToggle('#register_form', '#login_form');	});
+ 				$(".togg_register").click(function(event) {	fnToggle('#login_form', '#register_form');	});
+ 			});
+
+ 			function fnToggle(h, s){
+				$(h).animate({
+			    height: "toggle",
+			    'padding-top': 'toggle',
+			    'padding-bottom': 'toggle'
+			  }, "slow", function(){
+			  	$(s).animate({
+				    height: "toggle",
+				    'padding-top': 'toggle',
+				    'padding-bottom': 'toggle'
+				  }, "fast");
+			  });
+ 			}
+
+ 		</script>
+	</body>
+ </html>
